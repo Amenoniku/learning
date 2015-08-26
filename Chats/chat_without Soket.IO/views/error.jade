@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h1= error
+	if error.message
+		p= error.message
+	else
+		p= message
+	

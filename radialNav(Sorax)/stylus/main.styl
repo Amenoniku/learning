@@ -1,0 +1,60 @@
+* 
+	margin 0
+	padding 0
+
+html, body 
+	height 100% 
+	width 100% 
+
+body
+	background url(../bg.jpg)
+	background-position center
+	-webkit-background-size cover 
+	-o-background-size cover 
+	background-size cover 
+	overflow hidden 
+	&.context
+		cursor crosshair
+
+.radialnav
+	-webkit-user-select none 
+	-moz-user-select none 
+	-ms-user-select none 
+	user-select none 
+	cursor pointer
+	&-sector
+		fill rgba(255, 255, 255, .3)
+		stroke rgba(255, 255, 255, .1)
+		stroke-width 1
+		-webkit-transition all .4s 
+		-moz-transition all .4s 
+		-ms-transition all .4s 
+		-o-transition all .4s 
+		transition all .4s 
+		&.active
+			fill rgba(255, 255, 255, .9)
+	&-icon
+		fill #eee
+		-webkit-transition all .4s 
+		-moz-transition all .4s 
+		-ms-transition all .4s 
+		-o-transition all .4s 
+		transition all .4s 
+		&.active
+			fill #333
+	&-hint
+		fill #eee
+		font bold .95em 'PT Sans', Arial, sans-serif
+		text-anchor middle
+		text-transform uppercase
+		-webkit-transition all .4s 
+		-moz-transition all .4s 
+		-ms-transition all .4s 
+		-o-transition all .4s 
+		transition all .4s 
+		opacity 0
+		&.active
+			opacity 1
+
+.hide
+	display none

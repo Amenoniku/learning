@@ -1,0 +1,9 @@
+body {
+  font: 1em 'Open Sans', sens-serif;
+  background: rgba(255,34,255,0.133);
+  color: #333;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}

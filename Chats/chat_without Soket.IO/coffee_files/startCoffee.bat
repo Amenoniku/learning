@@ -1,0 +1,1 @@
+coffee --no-header -b -w -o ../ -cw .

@@ -1,0 +1,33 @@
+doctype html
+
+html
+	head
+		meta(charset="UTF-8")
+		title #{title}. Чат на Node.js
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel="stylesheet", type="text/css", href="/vendor/bootstrap/dist/css/bootstrap.css")
+		script(type="application/javascript", src="/vendor/bootstrap/dist/js/bootstrap.js")
+		script(type="application/javascript", src="/vendor/jquery/dist/jquery.js")
+		block head
+
+	body.container
+		header#header.header.page-header
+			nav.navbar.navbar-default
+				ul#mainMenu.nav.navbar-nav
+					li 
+						a(href="/") Главная
+					if user
+						li 
+							a(href="/chat") Чат
+				ul.nav.navbar-nav.navbar-right(style="margin-right: 7px;")
+					if user
+						li
+							a(href="", onclick="$('<form method=POST action=/logout>').submit();return false") Выйти
+					else
+						li
+							a(href="/login") Войти
+			block header
+
+		block content
+		footer#footer.footer.panel-footer.modal-footer
+			block footer

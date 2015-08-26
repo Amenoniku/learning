@@ -1,0 +1,32 @@
+body {
+  background: #13171c;
+  text-shadow: #000 1px 1px 0, #000 -1px -1px 0, #000 -1px 1px 0, #000 1px -1px 0;
+}
+#canvas {
+  width: 600px;
+  height: 700px;
+  background: #edbbde url("../bgcanvas.jpg");
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-box-shadow: 0 0 0 3px #873074;
+  box-shadow: 0 0 0 3px #873074;
+  cursor: crosshair;
+}
+aside {
+  width: 600px;
+  height: 700px;
+  margin: 0 auto;
+  display: block;
+}
+.disc {
+  color: #fff;
+  padding: 0;
+  line-height: 0;
+  font-size: 15px;
+  position: relative;
+  z-index: 5;
+}
