@@ -11,7 +11,7 @@ class Vec2
 	copy: -> new Vec2 @x, @y
 	@getRandom: (min, max) ->
 		new Vec2 do Math.random * (max - min) + min,
-			do Math.random * (max - min) + min
+			 do Math.random * (max - min) + min
 
 class World
 	constructor: (@canvas) ->
