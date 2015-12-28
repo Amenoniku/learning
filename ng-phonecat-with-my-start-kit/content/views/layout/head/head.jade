@@ -1,0 +1,9 @@
+head
+	meta(charset='utf-8')
+	meta(name='application-name' content=title || '')
+	meta(name='description' content=pageDescription || '')
+	meta(name='keywords' content=pageKeywords || '')
+	link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel="stylesheet")
+	link(href='styles/app.min.css?t=' + timestamp rel='stylesheet')
+	title= title || ""
+	block head

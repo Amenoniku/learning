@@ -1,0 +1,18 @@
+.container-fluid
+	.row
+		.col-md-2
+			// Sidebar content
+			| Search: 
+			input(ng-model='query')
+			|       Sort by:
+			select(ng-model='orderProp')
+				option(value='name') Alphabetical
+				option(value='age') Newest
+		.col-md-10
+			// Body content
+			ul.phones
+				li.thumbnail.phone-listing(ng-repeat='phone in phones | filter:query | orderBy:orderProp')
+					a.thumb(href='#/phones/{{phone.id}}')
+						img(ng-src='{{phone.imageUrl}}')
+					a(href='#/phones/{{phone.id}}') {{phone.name}}
+					p {{phone.snippet}}

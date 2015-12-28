@@ -1,0 +1,84 @@
+{
+  "name": "angular-my-phonecat",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "main": "gulpfile.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "dev": "gulp --debug"
+  },
+  "author": "Ame",
+  "license": "ISC",
+  "browserify": {
+    "transform": [
+      [
+        "coffeeify",
+        {
+          "bare": true,
+          "header": false
+        }
+      ],
+      [
+        "polyify",
+        {
+          "browsers": "IE >= 8"
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-animate": "^1.4.8",
+    "angular-resource": "^1.4.8",
+    "angular-route": "^1.4.8",
+    "coffee-script": "*",
+    "coffeeify": "*",
+    "es6-promise": "*",
+    "jquery": "^2.1.4",
+    "whatwg-fetch": "*"
+  },
+  "devDependencies": {
+    "autoprefixer-stylus": "*",
+    "browser-sync": "*",
+    "browserify": "*",
+    "del": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-cached": "*",
+    "gulp-changed": "*",
+    "gulp-group-css-media-queries": "*",
+    "gulp-html-prettify": "*",
+    "gulp-if": "*",
+    "gulp-jade": "*",
+    "gulp-jade-inheritance": "*",
+    "gulp-minify-css": "*",
+    "gulp-notify": "*",
+    "gulp-plumber": "*",
+    "gulp-rename": "*",
+    "gulp-stylus": "*",
+    "gulp-svg-symbols": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "gulp-zip": "*",
+    "gulp.spritesmith": "*",
+    "polyify": "*",
+    "pretty-hrtime": "*",
+    "require-dir": "*",
+    "run-sequence": "*",
+    "rupture": "*",
+    "vinyl-buffer": "*",
+    "vinyl-source-stream": "*",
+    "watchify": "*"
+  },
+  "browsers": {
+    "android": 4,
+    "chrome": 42,
+    "firefox": 37,
+    "ie": 10,
+    "ios": 7,
+    "opera": 28,
+    "safari": 7
+  }
+}
